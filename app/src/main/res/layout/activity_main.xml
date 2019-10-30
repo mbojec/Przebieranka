@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/capID"
+        android:layout_width="88dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/jacketID"
+        app:layout_constraintStart_toStartOf="@+id/jacketID"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/cczerwona" />
+
+    <ImageView
+        android:id="@+id/jacketID"
+        android:layout_width="252dp"
+        android:layout_height="223dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capID"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/pczerwony" />
+
+    <ImageView
+        android:id="@+id/gloveID"
+        android:layout_width="79dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="216dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jacketID"
+        app:layout_constraintEnd_toEndOf="@+id/jacketID"
+        app:layout_constraintTop_toTopOf="@+id/jacketID"
+        app:layout_constraintVertical_bias="0.917"
+        app:srcCompat="@drawable/rczerwona" />
+
+    <ImageView
+        android:id="@+id/shoesID"
+        android:layout_width="132dp"
+        android:layout_height="104dp"
+        app:layout_constraintEnd_toEndOf="@+id/jacketID"
+        app:layout_constraintStart_toStartOf="@+id/jacketID"
+        app:layout_constraintTop_toBottomOf="@+id/jacketID"
+        app:srcCompat="@drawable/btczerwone" />
+
+    <Button
+        android:id="@+id/capRedButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="144dp"
+        android:text="Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/capGreenButton" />
+
+    <Button
+        android:id="@+id/capGreenButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="144dp"
+        android:text="Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/capBlueButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="144dp"
+        android:text="Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capGreenButton" />
+
+    <Button
+        android:id="@+id/jacketRedButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Red"
+        app:layout_constraintEnd_toStartOf="@+id/jacketGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/capRedButton" />
+
+    <Button
+        android:id="@+id/jacketGreenButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capGreenButton" />
+
+    <Button
+        android:id="@+id/jacketBlueButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:text="Blue"
+        app:layout_constraintStart_toEndOf="@+id/jacketGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/capBlueButton" />
+
+    <Button
+        android:id="@+id/glovesRedButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Red"
+        app:layout_constraintEnd_toStartOf="@+id/glovesGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/jacketRedButton" />
+
+    <Button
+        android:id="@+id/glovesGreenButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jacketGreenButton" />
+
+    <Button
+        android:id="@+id/glovesBlueButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:text="Blue"
+        app:layout_constraintStart_toEndOf="@+id/glovesGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/jacketBlueButton" />
+
+    <Button
+        android:id="@+id/shoesRedButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Red"
+        app:layout_constraintEnd_toStartOf="@+id/shoesGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/glovesRedButton" />
+
+    <Button
+        android:id="@+id/shoesGreenButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glovesGreenButton" />
+
+    <Button
+        android:id="@+id/shoesBlueButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:text="Blue"
+        app:layout_constraintStart_toEndOf="@+id/shoesGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/glovesBlueButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="28dp"
+        android:layout_height="22dp"
+        android:text="cap"
+        app:layout_constraintBottom_toBottomOf="@+id/capRedButton"
+        app:layout_constraintEnd_toStartOf="@+id/capRedButton"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/capRedButton"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="13dp"
+        android:text="jacket"
+        app:layout_constraintBottom_toBottomOf="@+id/jacketRedButton"
+        app:layout_constraintEnd_toStartOf="@+id/jacketRedButton"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/jacketRedButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gloves"
+        app:layout_constraintBottom_toBottomOf="@+id/glovesRedButton"
+        app:layout_constraintEnd_toStartOf="@+id/glovesRedButton"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jacketRedButton"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shoes"
+        app:layout_constraintBottom_toBottomOf="@+id/shoesRedButton"
+        app:layout_constraintEnd_toStartOf="@+id/shoesRedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glovesRedButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
