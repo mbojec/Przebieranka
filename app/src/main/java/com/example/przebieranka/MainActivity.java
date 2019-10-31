@@ -43,11 +43,16 @@ public class MainActivity extends AppCompatActivity {
         } catch (NullPointerException e) {
         }
 
+        capView = (ImageView) findViewById(R.id.capID);
+        jacketView = (ImageView) findViewById(R.id.jacketID);
+        glovesView = (ImageView) findViewById(R.id.gloveID);
+        shoesView = (ImageView) findViewById(R.id.shoesID);
+
         cR = (Button) findViewById(R.id.capRedButton);
         cR.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                capView.setBackgroundResource(R.drawable.cczerwona);
+                capView.setImageResource(R.drawable.cczerwona);
             }
         }));
 
@@ -66,6 +71,70 @@ public class MainActivity extends AppCompatActivity {
                 capView.setImageResource(R.drawable.cniebieska);
             }
         }));
+        jR = (Button) findViewById(R.id.jacketRedButton);
+        jR.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jacketView.setImageResource(R.drawable.pczerwony);
+            }
+        }));
+        jG = (Button) findViewById(R.id.jacketGreenButton);
+        jG.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jacketView.setImageResource(R.drawable.pzielony);
+            }
+        }));
+        jB = (Button) findViewById(R.id.jacketBlueButton);
+        jB.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jacketView.setImageResource(R.drawable.pniebieski);
+            }
+        }));
+        gR = (Button) findViewById(R.id.glovesRedButton);
+        gR.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                glovesView.setImageResource(R.drawable.rczerwona);
+            }
+        }));
+        gG = (Button) findViewById(R.id.glovesGreenButton);
+        gG.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                glovesView.setImageResource(R.drawable.rzielona);
+            }
+        }));
+        gB = (Button) findViewById(R.id.glovesBlueButton);
+        gB.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                glovesView.setImageResource(R.drawable.rniebieska);
+            }
+        }));
+        sR = (Button) findViewById(R.id.shoesRedButton);
+        sR.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shoesView.setImageResource(R.drawable.btczerwone);
+            }
+        }));
+        sG = (Button) findViewById(R.id.shoesGreenButton);
+        sG.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shoesView.setImageResource(R.drawable.btzielone);
+            }
+        }));
+        sB = (Button) findViewById(R.id.shoesBlueButton);
+        sB.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shoesView.setImageResource(R.drawable.btniebieskie);
+            }
+        }));
+
 
 
     }

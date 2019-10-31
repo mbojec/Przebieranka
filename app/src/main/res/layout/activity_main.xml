@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <ImageView
@@ -50,119 +51,119 @@
         app:srcCompat="@drawable/btczerwone" />
 
     <Button
-        android:id="@+id/capRedButton"
-        android:layout_width="100dp"
+        android:id="@+id/capGreenButton"
+        android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="144dp"
+        android:text="Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/capRedButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginBottom="144dp"
         android:text="Red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/capGreenButton" />
 
     <Button
-        android:id="@+id/capGreenButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="144dp"
-        android:text="Green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/capBlueButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="144dp"
-        android:text="Blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/capGreenButton" />
-
-    <Button
         android:id="@+id/jacketRedButton"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="12dp"
         android:text="Red"
         app:layout_constraintEnd_toStartOf="@+id/jacketGreenButton"
         app:layout_constraintTop_toBottomOf="@+id/capRedButton" />
 
     <Button
-        android:id="@+id/jacketGreenButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:text="Green"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/capGreenButton" />
-
-    <Button
-        android:id="@+id/jacketBlueButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:text="Blue"
-        app:layout_constraintStart_toEndOf="@+id/jacketGreenButton"
-        app:layout_constraintTop_toBottomOf="@+id/capBlueButton" />
-
-    <Button
         android:id="@+id/glovesRedButton"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="12dp"
         android:text="Red"
         app:layout_constraintEnd_toStartOf="@+id/glovesGreenButton"
         app:layout_constraintTop_toBottomOf="@+id/jacketRedButton" />
 
     <Button
-        android:id="@+id/glovesGreenButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:text="Green"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jacketGreenButton" />
-
-    <Button
-        android:id="@+id/glovesBlueButton"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:text="Blue"
-        app:layout_constraintStart_toEndOf="@+id/glovesGreenButton"
-        app:layout_constraintTop_toBottomOf="@+id/jacketBlueButton" />
-
-    <Button
         android:id="@+id/shoesRedButton"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="12dp"
         android:text="Red"
         app:layout_constraintEnd_toStartOf="@+id/shoesGreenButton"
         app:layout_constraintTop_toBottomOf="@+id/glovesRedButton" />
 
     <Button
-        android:id="@+id/shoesGreenButton"
-        android:layout_width="100dp"
+        android:id="@+id/shoesBlueButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:text="Blue"
+        app:layout_constraintStart_toEndOf="@+id/shoesGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/glovesBlueButton" />
+
+    <Button
+        android:id="@+id/glovesBlueButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:text="Blue"
+        app:layout_constraintStart_toEndOf="@+id/glovesGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/jacketBlueButton" />
+
+    <Button
+        android:id="@+id/jacketBlueButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:text="Blue"
+        app:layout_constraintStart_toEndOf="@+id/jacketGreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/capBlueButton" />
+
+    <Button
+        android:id="@+id/jacketGreenButton"
+        android:layout_width="80dp"
         android:layout_height="40dp"
         android:text="Green"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capGreenButton" />
+
+    <Button
+        android:id="@+id/glovesGreenButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jacketGreenButton" />
+
+    <Button
+        android:id="@+id/shoesGreenButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/glovesGreenButton" />
 
     <Button
-        android:id="@+id/shoesBlueButton"
-        android:layout_width="100dp"
+        android:id="@+id/capBlueButton"
+        android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="144dp"
         android:text="Blue"
-        app:layout_constraintStart_toEndOf="@+id/shoesGreenButton"
-        app:layout_constraintTop_toBottomOf="@+id/glovesBlueButton" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capGreenButton" />
 
     <TextView
         android:id="@+id/textView"
@@ -185,7 +186,7 @@
         android:text="jacket"
         app:layout_constraintBottom_toBottomOf="@+id/jacketRedButton"
         app:layout_constraintEnd_toStartOf="@+id/jacketRedButton"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/jacketRedButton"
         app:layout_constraintVertical_bias="0.0" />
@@ -197,10 +198,10 @@
         android:text="gloves"
         app:layout_constraintBottom_toBottomOf="@+id/glovesRedButton"
         app:layout_constraintEnd_toStartOf="@+id/glovesRedButton"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jacketRedButton"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintVertical_bias="0.476" />
 
     <TextView
         android:id="@+id/textView4"
@@ -211,4 +212,5 @@
         app:layout_constraintEnd_toStartOf="@+id/shoesRedButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/glovesRedButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
